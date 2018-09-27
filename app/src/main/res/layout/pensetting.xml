@@ -1,0 +1,87 @@
+<!-- 笔型设置 --><LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pensetting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kinggrid_bg_signature1"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="笔宽和颜色设置"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_close_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kinggrid_bg_close" />
+    </RelativeLayout>
+
+    <!-- 预览图 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/textshow"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <!-- 笔形选择 -->
+
+    <GridView
+        android:id="@+id/pen_type_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:columnWidth="10dp"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <!-- 宽度设置 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/seekset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+    </LinearLayout>
+    
+    <GridView
+        android:id="@+id/pen_color_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31A3EE</color>
+    <color name="colorPrimaryDark">#31A3EE</color>
+    <color name="c_31A3EE">#31A3EE</color>
+    <color name="colorAccent">#22AC38</color>
+    <color name="white">#FFFFFF</color>
+    <!--默认背景灰色-->
+    <color name="main_bg">#ecedf1</color>
+    <!--副字体颜色-->
+    <color name="vice_txt">#999999</color>
+    <color name="red">#fb6565</color>
+    <color name="c_ecedf1">#ecedf1</color> <!--默认背景灰色-->
+    <color name="division_wire">#e5e5e5</color> <!-- 分割线 -->
+    <color name="c_e1e1e6">#e1e1e6</color> <!--listview分割线颜色-->
+    <color name="menu_item2">#6BBAEA</color> <!-- 菜单按钮 -->
+    <color name="dimens_shiwei">#656565</color> <!-- 文字颜色 -->
+    <color name="transparent">#00000000</color>
+
+
+    <color name="c3">#757575</color>
+    <color name="c6">#2d2d2d</color>
+    <color name="c9">#999999</color>
+</resources>

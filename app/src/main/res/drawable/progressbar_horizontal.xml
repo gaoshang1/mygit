@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!--  设置背景色图像资源  -->  
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="15dip" />
+            <gradient
+                    android:startColor="#30ffffff"
+                    android:centerColor="#30ffffff"
+                    android:centerY="0.75"
+                    android:endColor="#30ffffff"
+                    android:angle="270"
+            />
+        </shape>
+    </item>
+    <!--  设置第二级进度条颜色图像资源  -->  
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="15dip" />
+                <gradient
+                        android:startColor="#80ffd300"
+                        android:centerColor="#80ffb600"
+                        android:centerY="0.75"
+                        android:endColor="#a0ffcb00"
+                        android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    <!--  设置第一级进度条颜色图像资源  -->  
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="15dip" />
+                <gradient
+                        android:startColor="#ffffdf81"
+                        android:centerColor="#ffffeac5"
+                        android:centerY="0.25"
+                        android:endColor="#fffd680f"
+                        android:angle="270"                 
+                />
+            </shape>
+        </clip>
+    </item>
+</layer-list>  

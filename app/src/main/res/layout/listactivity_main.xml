@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        style="@style/actionbar_height"
+        android:layout_width="match_parent"
+        android:background="@color/c_31A3EE">
+
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/actionbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="公文收发"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/add"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:src="@mipmap/ic_search"/>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:src="@mipmap/addopinion"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/tablayout_heigt"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"/>
+
+        <View
+            style="@style/div_heigt"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/c_e1e1e6"
+            />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

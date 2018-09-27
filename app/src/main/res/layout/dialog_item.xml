@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="250dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="催办内容"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_bg"/>
+
+        <ListView
+            android:id="@+id/alert_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/main_bg"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_bg"/>
+    </LinearLayout>
+
+</LinearLayout>

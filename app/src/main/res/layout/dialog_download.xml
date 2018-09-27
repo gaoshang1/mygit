@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/download_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/download_bg">
+
+    <!-- 进度% -->
+    <TextView
+        android:id="@+id/verInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dip"
+        android:layout_marginTop="18dip"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verInfo"
+        android:layout_marginLeft="17dip"
+        android:gravity="left"
+        android:text="正在下载"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/progressNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="18dip"
+        android:gravity="right"
+        android:text="0%"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <!-- 进度条 -->
+    <ProgressBar
+        android:id="@+id/downloadbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="198dip"
+        android:layout_height="16dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dip"
+        android:background="@drawable/progress_receivepic"
+        android:progressDrawable="@drawable/progressbar_horizontal"/>
+</RelativeLayout>
+

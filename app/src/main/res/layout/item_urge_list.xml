@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/listbg"
+              android:orientation="vertical"
+              android:paddingBottom="15dp">
+
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="催  办  人："
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wewgrhwdgd"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信内容："
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wewgrhwdgd"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="催办时间："
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wewgrhwdgd"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被催办人："
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wewgrhwdgd"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+</LinearLayout>

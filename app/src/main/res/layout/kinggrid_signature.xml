@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kinggrid_bg_signature" >
+
+    <RelativeLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#BB89009F"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" >
+
+        <!-- 画笔 -->
+
+        <Button
+            android:id="@+id/btn_pen"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/kinggrid_signature_bg_pen" />
+        <!-- 关闭 -->
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/kinggrid_signature_bg_close" />
+        <!-- 清屏 -->
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/btn_close"
+            android:background="@drawable/kinggrid_signature_bg_clear" />
+        <!-- 保存 -->
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:background="@drawable/kinggrid_signature_bg_save" />
+        <!-- 重做 -->
+
+        <Button
+            android:id="@+id/btn_redo"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/btn_save"
+            android:background="@drawable/kinggrid_signature_bg_redo" />
+        <!-- 撤销 -->
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/btn_redo"
+            android:background="@drawable/kinggrid_signature_bg_undo" />
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_btns" >
+
+        <com.kinggrid.iapppdf.ui.viewer.PDFHandWriteView
+            android:id="@+id/v_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+</RelativeLayout>

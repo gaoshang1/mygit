@@ -1,0 +1,268 @@
+<resources>
+    <string name="app_name">督查系统</string>
+    <string-array name="nian">
+        <item>2016年</item>
+        <item>2017年</item>
+        <item>2018年</item>
+        <item>2019年</item>
+    </string-array>
+    <string-array name="yue">
+        <item>1  月</item>
+        <item>2  月</item>
+        <item>3  月</item>
+        <item>4  月</item>
+        <item>5  月</item>
+        <item>6  月</item>
+        <item>7  月</item>
+        <item>8  月</item>
+        <item>9  月</item>
+        <item>10 月</item>
+        <item>11 月</item>
+        <item>12 月</item>
+    </string-array>
+    <string-array name="ri">
+        <item>1  日</item>
+        <item>2  日</item>
+        <item>3  日</item>
+        <item>4  日</item>
+        <item>5  日</item>
+        <item>6  日</item>
+        <item>7  日</item>
+        <item>8  日</item>
+        <item>9  日</item>
+        <item>10 日</item>
+        <item>11 日</item>
+        <item>12 日</item>
+        <item>13 日</item>
+        <item>14 日</item>
+        <item>15 日</item>
+        <item>16 日</item>
+        <item>17 日</item>
+        <item>18 日</item>
+        <item>19 日</item>
+        <item>20 日</item>
+        <item>21 日</item>
+        <item>22 日</item>
+        <item>23 日</item>
+        <item>24 日</item>
+        <item>25 日</item>
+        <item>26 日</item>
+        <item>27 日</item>
+        <item>28 日</item>
+        <item>29 日</item>
+        <item>30 日</item>
+        <item>31 日</item>
+    </string-array>
+    <string-array name="hour_display">
+
+        <item>00  :</item>
+        <item>01  :</item>
+        <item>02  :</item>
+        <item>03  :</item>
+        <item>04  :</item>
+        <item>05  :</item>
+        <item>06  :</item>
+        <item>07  :</item>
+        <item>08  :</item>
+        <item>09  :</item>
+        <item>10  :</item>
+        <item>11  :</item>
+        <item>12  :</item>
+        <item>13  :</item>
+        <item>14  :</item>
+        <item>15  :</item>
+        <item>16  :</item>
+        <item>17  :</item>
+        <item>18  :</item>
+        <item>19  :</item>
+        <item>20  :</item>
+        <item>21  :</item>
+        <item>22  :</item>
+        <item>23  :</item>
+    </string-array>
+
+    <string-array name="minute_display">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="half_day">
+        <item>上午</item>
+        <item>下午</item>
+    </string-array>
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+    <!-- 金格pdf签批 -->
+    <string name="signature_delete">删除签名</string>
+    <string name="note_list">批注清单</string>
+    <string name="text_note_list">注释清单</string>
+    <string name="bookmark_list">大纲</string>
+    <string name="annot_sound_list">语音清单</string>
+    <string name="text_note">文字注释</string>
+    <string name="note_delete">删除注释</string>
+    <string name="note_setting2">手写笔设置</string>
+    <string name="full_signature_delete">删除批注</string>
+    <string name="sound_note">语音批注</string>
+    <string name="delete_sound_note">删除语音</string>
+    <string name="camera">证件拍照</string>
+    <string name="about">关于</string>
+    <string name="digital_signature">数字签名</string>
+    <string name="verify">验证</string>
+    <string name="search">搜索</string>
+    <string name="area">退出</string>
+    <string name="document_saveas">另存</string>
+    <string name="save_pages">保存页面图片</string>
+    <string name="save">保存</string>
+    <string name="save_field_content">保存文本域内容</string>
+    <string name="duplex">同步签批</string>
+    <string name="btnlocal">网络文档</string>
+    <string name="insertlable">URL</string>
+    <string name="edtinserttext">http://192.168.0.77:8080/iWebPDF/PDFServer.jsp</string>
+    <string name="signature_url">数字签名服务器地址</string>
+    <string name="signature_url_edit">http://192.168.0.48:8888/Demo/DefaulServlet</string>
+    <string name="user_name">用户名</string>
+    <string name="edt_user_name">admin</string>
+    <string name="field1">盖章域</string>
+    <string name="signaturefield1">Signature1</string>
+    <string name="field2">签名域</string>
+    <string name="signaturefield2">Signature2</string>
+    <string name="config_other">其他</string>
+    <string name="pageview_mode">页面显示模板</string>
+    <string name="sign_mode">手写模式</string>
+    <string name="annot_protection">保存后是否保护批注</string>
+    <!-- dialog -->
+
+    <string name="dialog_message_annot_signature">即将删除文档中当前用户的全部手写签名，是否删除？</string>
+    <string name="dialog_message_annot_hardwrite">即将删除文档中当前用户的全部手写批注，是否删除？</string>
+    <string name="dialog_message_annot_text">即将删除文档中当前用户的全部文字注释，是否删除？</string>
+    <string name="dialog_message_annot_sound">即将删除文档中当前用户的全部语音批注，是否删除？</string>
+
+    <!-- result -->
+    <string name="please_install_open_app">请安装第三方打开应用！</string>
+    <string name="result_invalid_sign">至少有一个签名是无效的</string>
+    <string name="result_valid_sign">所有签名有效</string>
+    <string name="result_no_exist_sign">文档不存在数字签名</string>
+    <string name="result_add_content">所有签名有效，最后一次签名后追加了内容</string>
+    <string name="result_sign_unusual">数字签名异常</string>
+    <string name="result_success_sign">签名成功</string>
+    <string name="exception_tip">网络连接发生异常</string>
+    <string name="tip">提示</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_sure">确定</string>
+    <string name="shi">是</string>
+    <string name="fou">否</string>
+    <!-- WPS -->
+    <string name="saveAs">另存为</string>
+    <string name="closeWindow">关闭窗口</string>
+    <string name="insertParagraph">新段落替换</string>
+    <string name="paste">粘贴</string>
+    <string name="cut">剪切</string>
+    <string name="typeText">插入文字</string>
+    <string name="saveToImg">修订保护</string>
+    <string name="showOther">下页功能</string>
+    <string name="adPicture">添加嵌入图</string>
+    <string name="hideAll">隐藏所有</string>
+    <string name="clearComment">批注保护</string>
+    <string name="undo">只读保护</string>
+    <string name="redo">取消保护</string>
+    <string name="Selection">选区信息</string>
+    <string name="SetSelection">设置选区</string>
+    <string name="showPage">显示页数、路径、名称</string>
+    <string name="isModi">插入文本框</string>
+    <string name="getPageCount">获取文档页数</string>
+    <string name="getPage">获取文档Page</string>
+    <string name="getPath">获取文档路径</string>
+    <string name="getName">获取文档名称</string>
+    <string name="wpsnoinstill">文件打开失败，移动wps可能未安装</string>
+    <!-- 我的签批 -->
+    <string name="mysign">我的签批</string>
+    <string name="back">返回</string>
+    <string name="do_signdetail_title">签批详情</string>
+    <string name="download_error">"下载出错啦！"</string>
+    <string name="file_detail">文件详情</string>
+    <string name="open">打开</string>
+    <string name="online_preview">在线预览</string>
+    <string name="client_open">客户端打开</string>
+    <string name="downlaod">下载</string>
+
+
+    <string name="document_save">保存文档</string>
+    <string name="signature">签名</string>
+    <string name="full_signature">全文批注</string>
+
+    <string name="msg_loading_tip">正在加载，请稍候！</string>
+
+    <!-- dialog -->
+    <string name="dialog_title">提示</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_message_save">是否保存文档？</string>
+
+    <!-- result -->
+    <string name="dialog_save_info">PDF文档已修改，是否保存？</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_no_save">不保存</string>
+
+    <string name="no_signature2">该文档没有签名域，无法做签名操作</string>
+    <string name="close_doc_title">是否关闭当前文档？</string>
+
+    <string name="launch_pdf">点击屏幕，打开pdf文件！</string>
+</resources>

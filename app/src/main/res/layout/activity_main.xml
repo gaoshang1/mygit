@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/actionbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="督查系统"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:src="@mipmap/ic_search"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/but1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/gzqr"
+                    android:gravity="center"
+                    android:text="跟踪确认"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/gztx"
+                    android:gravity="center"
+                    android:text="跟踪填写"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/fgqr"
+                    android:gravity="center"
+                    android:text="分工确认"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/but4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/jdtx"
+                    android:gravity="center"
+                    android:text="进度填写"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/dcgz"
+                    android:gravity="center"
+                    android:text="督查跟踪"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/zxgz"
+                    android:gravity="center"
+                    android:text="专项跟踪"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/but7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/jhcb"
+                    android:gravity="center"
+                    android:text="计划承办"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/rwcb"
+                    android:gravity="center"
+                    android:text="任务承办"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/but9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/csj"
+                    android:gravity="center"
+                    android:text="抄送件"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/but10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/xbj"
+                    android:gravity="center"
+                    android:text="协办件"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/xbj"
+                    android:gravity="center"
+                    android:text="协办件"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/xbj"
+                    android:gravity="center"
+                    android:textColor="#2d2d2d"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

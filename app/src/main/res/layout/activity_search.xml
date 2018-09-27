@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/actionbar_height"
+        android:layout_width="match_parent"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/actionbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            style="@style/linearLayout">
+
+            <TextView
+                android:id="@+id/txt1"
+                style="@style/textKey"
+                android:text="编        号"
+                />
+
+            <EditText
+                android:id="@+id/text1"
+                style="@style/textValues"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/div2"
+            layout="@layout/dashs_view"/>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            style="@style/linearLayout">
+
+            <TextView
+                android:id="@+id/txt2"
+                style="@style/textKey"
+                android:text="事项名称"
+                />
+
+            <EditText
+                android:id="@+id/text2"
+                style="@style/textValues"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/div3"
+            layout="@layout/dashs_view"/>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            style="@style/linearLayout">
+
+
+            <TextView
+                android:id="@+id/txt3"
+                style="@style/textKey"
+                android:text="登记时间"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                style="@style/textValues"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                style="@style/textValues"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+
+                android:text="至"
+                />
+
+            <TextView
+                android:id="@+id/text4"
+                style="@style/textValues"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_subordinate"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/div4"
+            layout="@layout/dashs_view"/>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            style="@style/linearLayout">
+
+            <TextView
+                android:id="@+id/txt4"
+                style="@style/textKey"
+                android:text="事项类别"
+                />
+
+            <TextView
+                android:id="@+id/text5"
+                style="@style/textValues"
+                android:text="全部"
+                />
+        </LinearLayout>
+
+
+        <include layout="@layout/dashs_view"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/determine"
+        style="@style/submit_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/but_selector"
+        android:text="确定"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

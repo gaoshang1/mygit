@@ -1,0 +1,47 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .fatjar
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => iAppPDFLib_V30\src\main\AndroidManifest.xml
+* assets\ => iAppPDFLib_V30\src\main\assets
+* libs\armeabi-v7a\libiapppdf.so => iAppPDFLib_V30\src\main\jniLibs\armeabi-v7a\libiapppdf.so
+* libs\armeabi-v7a\libistylepdfengine.so => iAppPDFLib_V30\src\main\jniLibs\armeabi-v7a\libistylepdfengine.so
+* libs\armeabi-v7a\libLMSecurityPlugin.so => iAppPDFLib_V30\src\main\jniLibs\armeabi-v7a\libLMSecurityPlugin.so
+* libs\armeabi-v7a\libTFDriver.so => iAppPDFLib_V30\src\main\jniLibs\armeabi-v7a\libTFDriver.so
+* libs\armeabi\libiapppdf.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libiapppdf.so
+* libs\armeabi\libistylepdfengine.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libistylepdfengine.so
+* libs\armeabi\libK5_SKFLib.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libK5_SKFLib.so
+* libs\armeabi\libkgsslsignature.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libkgsslsignature.so
+* libs\armeabi\libLMSecurityPlugin.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libLMSecurityPlugin.so
+* libs\armeabi\libTFDriver.so => iAppPDFLib_V30\src\main\jniLibs\armeabi\libTFDriver.so
+* libs\iAppPDF.jar => iAppPDFLib_V30\libs\iAppPDF.jar
+* res\ => iAppPDFLib_V30\src\main\res\
+* src\ => iAppPDFLib_V30\src\main\java
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/listbg"
+              android:orientation="vertical"
+              android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事项名称"
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <include layout="@layout/dash_view"/>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成期限"
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="延时期限"
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c3"
+            android:text="申请时间"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申  请  人"
+
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请结果"
+
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/itemLayout">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复时间"
+
+            android:textColor="@color/c3"/>
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c6"/>
+    </LinearLayout>
+
+</LinearLayout>

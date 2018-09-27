@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/hw_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.kinggrid.iapppdf.ui.viewer.PDFHandWriteView
+        android:id="@+id/v_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip">
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/kinggrid_bg_undo"
+            />
+
+        <Button
+            android:id="@+id/btn_redo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@drawable/kinggrid_bg_redo"/>
+
+        <Button
+            android:id="@+id/btn_pen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/kinggrid_bg_pen"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/kinggrid_bg_close"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@drawable/kinggrid_bg_clear"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/kinggrid_bg_save"/>
+
+        <Button
+            android:id="@+id/btn_earse"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/kinggrid_bg_earse"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

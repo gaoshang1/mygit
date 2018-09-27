@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/actionbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="查询结果"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:src="@mipmap/zwzl"/>
+
+    <com.northdoo.futian_ducha.utlis.RefreshView
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+    </com.northdoo.futian_ducha.utlis.RefreshView>
+</RelativeLayout>

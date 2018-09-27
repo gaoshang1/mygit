@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ecedf1"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="承办反馈"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="要求反馈时间"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="预计完成时间"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="完成情况"/>
+
+                    <RadioGroup
+                        android:id="@+id/rg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="已完成"
+                            android:textColor="#333333"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="未完成"
+                            android:textColor="#333333"
+                            android:textSize="14sp"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="短信通知"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="是"
+                            android:textColor="#333333"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="否"
+                            android:textColor="#333333"
+                            android:textSize="14sp"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="议定事项/落实内容"
+                        />
+
+                    <EditText
+                        android:id="@+id/text5"
+                        style="@style/textValues"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="工作进展情况"/>
+
+                    <EditText
+                        android:id="@+id/text6"
+                        style="@style/textValues"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="存在问题及原因"/>
+
+                    <EditText
+                        android:id="@+id/text7"
+                        style="@style/textValues"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="症结主体单位"/>
+
+                    <EditText
+                        android:id="@+id/text8"
+                        style="@style/textValues"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="本单位解决措施"/>
+
+                    <EditText
+                        android:id="@+id/text9"
+                        style="@style/textValues"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave_line"
+                android:paddingTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/num_fujian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="附件"
+                    android:textColor="#353535"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:id="@+id/icon_fj"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/icon_tianjia"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.northdoo.futian_ducha.utlis.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

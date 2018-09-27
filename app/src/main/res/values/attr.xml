@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionbar_height" format="dimension"/>
+    <attr name="actionbar_text" format="dimension"/>
+    <attr name="tablayout_heigt" format="dimension"/>
+    <attr name="div_heigt" format="dimension"/>
+    <attr name="button_text" format="dimension"/>
+    <attr name="button_heigt" format="dimension"/>
+    <attr name="content_text" format="dimension"/>
+</resources>

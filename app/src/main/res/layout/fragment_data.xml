@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c_ecedf1"
+                android:orientation="vertical">
+
+
+    <com.northdoo.futian_ducha.utlis.RefreshView
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+    </com.northdoo.futian_ducha.utlis.RefreshView>
+</RelativeLayout>

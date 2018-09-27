@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecedf1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="专项详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/zgw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="复核反馈"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="专项编号" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="专项名称" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="登记日期" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="完成日期" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="反馈时间" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="分管领导" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="主办单位" />
+
+                    <TextView
+                        android:id="@+id/text7"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="联系人" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式" />
+
+                    <TextView
+                        android:id="@+id/text9"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="协办单位" />
+
+                    <TextView
+                        android:id="@+id/text10"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="抄报" />
+
+                    <TextView
+                        android:id="@+id/text11"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="抄送" />
+
+                    <TextView
+                        android:id="@+id/text12"
+                        style="@style/textValues" />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view" />
+
+                <LinearLayout style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="主要内容" />
+
+                    <TextView
+                        android:id="@+id/text13"
+                        style="@style/textValues" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave_line"
+                android:paddingTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:minHeight="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/do_detail_comment01"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:minWidth="69dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="15dp"
+                    android:text="领导批示"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/list_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="暂无批示"
+                    android:textColor="@color/c3"
+                    android:textSize="14sp" />
+
+                <com.northdoo.futian_ducha.utlis.NoScrollListView
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#dadada"
+                    android:dividerHeight="1px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:minHeight="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/do_detail_comment01"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:minWidth="69dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="15dp"
+                    android:text="落实内容"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/list_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="暂无内容"
+                    android:textColor="@color/c3"
+                    android:textSize="14sp" />
+
+                <com.northdoo.futian_ducha.utlis.NoScrollListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:paddingBottom="15dp" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/attachment_fragment"
+                android:name="com.northdoo.futian_ducha.AttachmentFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+            <com.northdoo.futian_ducha.utlis.NoScrollListView
+                android:id="@+id/listviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

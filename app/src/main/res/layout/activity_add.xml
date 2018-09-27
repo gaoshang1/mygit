@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="新建"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="文号"
+                        />
+
+                    <EditText
+                        android:id="@+id/edittext2"
+                        style="@style/editText"
+                        android:hint="请输入文号好"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="文类"
+                        />
+
+                    <EditText
+                        android:id="@+id/edittext3"
+                        style="@style/editText"
+                        android:focusable="false"
+                        android:hint="请选择文类"/>
+                </LinearLayout>
+
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="密度"
+                        />
+
+                    <EditText
+                        android:id="@+id/edittext4"
+                        style="@style/editText"
+                        android:focusable="false"
+                        android:hint="请选择密度"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="等级"
+                        />
+
+                    <EditText
+                        android:id="@+id/edittext5"
+                        style="@style/editText"
+                        android:focusable="false"
+                        android:hint="请选择等级"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="发文标题"
+                        />
+
+                    <EditText
+                        android:id="@+id/edittext1"
+                        style="@style/editText"
+                        android:hint="请输入文件标题"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="区领导意见"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edittext6"
+                        style="@style/editText"
+                        android:hint="请输入区领导意见"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="主题词"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edittext7"
+                        style="@style/editText"
+                        android:hint="请输入主题词"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="短信提醒"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/checkcbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="15dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="是否需要回执"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/checkcbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="15dp"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="是否需要反馈"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/checkcbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="主办单位"
+                            />
+
+                        <EditText
+                            android:id="@+id/edittext8"
+                            style="@style/editText"
+                            android:focusable="false"
+                            android:hint="请选择主办单位"/>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="设置办理期限"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkcbox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="15dp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        android:id="@+id/linear3"
+                        style="@style/linearLayout"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:layout_width="wrap_content"
+                            android:text="反馈时间"
+                            />
+
+                        <EditText
+                            android:id="@+id/edittext10"
+                            style="@style/editText"
+                            android:focusable="false"
+                            android:hint="请选择反馈时间"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/main_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/num_fujian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="附件"
+                    android:textColor="#353535"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:id="@+id/icon_fj"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/icon_tianjia"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.northdoo.futian_ducha.utlis.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/main_bg"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

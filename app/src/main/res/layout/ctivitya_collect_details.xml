@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efeff4"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="已收公文详情"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/zgw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/zhuan"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="发文标题"
+                        />
+
+                    <TextView
+                        android:id="@+id/fwbt"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="文类"
+                        />
+
+                    <TextView
+                        android:id="@+id/wl"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="密度"
+                        />
+
+                    <TextView
+                        android:id="@+id/md"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="等级"
+                        />
+
+                    <TextView
+                        android:id="@+id/dj"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/div"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="文号"
+                        />
+
+                    <TextView
+                        android:id="@+id/wh"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gone_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="区领导意"
+                            />
+
+                        <TextView
+                            android:id="@+id/qldyj"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="主题词"
+                            />
+
+                        <TextView
+                            android:id="@+id/ztc"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="回执类型"
+                            />
+
+                        <TextView
+                            android:id="@+id/hzlx"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="催办"
+                            />
+
+                        <TextView
+                            android:id="@+id/cb"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:layout_width="wrap_content"
+                            android:text="是否反馈办理结果"
+                            />
+
+                        <TextView
+                            android:id="@+id/sffk"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:text="办理时限"
+                            />
+
+                        <TextView
+                            android:id="@+id/blsx"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/div"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        style="@style/linearLayout"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/textKey"
+                            android:layout_width="wrap_content"
+                            android:text="是否需要退回原件"
+                            />
+
+                        <TextView
+                            android:id="@+id/thyj"
+                            style="@style/textValues"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/div"/>
+
+            <LinearLayout
+                android:id="@+id/isgone"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_lower"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efeff4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@mipmap/icon_enclosure"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="附件列表"
+                android:textColor="#858585"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/zwfj"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#efeff4"
+                android:gravity="center"
+                android:text="暂无附件"/>
+
+            <com.northdoo.futian_ducha.utlis.NoScrollListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#efeff4"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

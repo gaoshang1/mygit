@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ecedf1"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="延时详情"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="反馈时间"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="完成时间"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="延时期限"
+                        />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="延时理由"
+                        />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="结        果"
+                        />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="回复意见"/>
+
+                    <TextView
+                        android:id="@+id/text6"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="回复时间"/>
+
+                    <TextView
+                        android:id="@+id/text7"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="申请单位"/>
+
+                    <TextView
+                        android:id="@+id/text8"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="申  请  人"/>
+
+                    <TextView
+                        android:id="@+id/text9"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave_line"/>
+
+            <fragment
+                android:id="@+id/attachment_fragment"
+                android:name="com.northdoo.futian_ducha.AttachmentFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

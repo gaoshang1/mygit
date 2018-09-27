@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ecedf1"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c_31A3EE">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-15dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/selector_app_back"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="分工确认详情"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="事项类别"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="分工确认期限"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="进度填写期限"
+                        />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="主要工作"
+                        />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:text="具体内容"
+                        />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="目标要求"/>
+
+                    <TextView
+                        android:id="@+id/text6"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="责任分工"/>
+
+                    <TextView
+                        android:id="@+id/text7"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/dashs_view"/>
+
+                <LinearLayout
+                    style="@style/linearLayout">
+
+                    <TextView
+                        style="@style/textKey"
+                        android:layout_height="wrap_content"
+                        android:text="状    态"/>
+
+                    <TextView
+                        android:id="@+id/text8"
+                        style="@style/textValues"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#efeff4"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#299eea"
+                    android:text="确认该任务归属本单位"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#fd8585"
+                    android:text="否认该任务归属本单位"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
